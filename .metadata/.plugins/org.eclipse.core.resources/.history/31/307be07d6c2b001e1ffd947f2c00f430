@@ -1,0 +1,12 @@
+package reveresingTheNumbers;
+
+public class Reverse {
+	int reverseNum(int n)
+	int rev=0;
+	{
+		int rem=n%10;
+		rev=(rem*10)+rem;
+		n=n/10;
+	}
+      return rev;
+}

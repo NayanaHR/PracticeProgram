@@ -1,0 +1,13 @@
+
+public class SumOfSeriesCalculator{
+ double sum=1;
+	double findSum(int n) 
+ {
+	 for(int i=1;i<=n;i++)
+	 {
+		  sum=sum+1/i;
+	 }
+	 return sum;
+	 
+ }
+}

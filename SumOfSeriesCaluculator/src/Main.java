@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+	Scanner scan =new Scanner(System.in);
+	System.out.println("Enter the value of n:");
+	int n=scan.nextInt();
+	SumOfSeriesCalculator sc=new SumOfSeriesCalculator();
+	double result=sc.findSum(n);
+	System.out.println(result);
+}
+}

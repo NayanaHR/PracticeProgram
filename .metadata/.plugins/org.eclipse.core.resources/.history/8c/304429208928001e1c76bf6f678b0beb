@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Solution7 {
+public static void main(String[] args) {
+	Scanner scan =new Scanner(System.in);
+	System.out.println("Enter the Range");
+	int n=scan.nextInt();
+	for(int i=3;i<=n;i++)
+	{
+		int res=checkPrime(n);
+		if(res!=0)
+		{
+			System.out.println(res);
+		}
+	}
+	
+}
+public static int checkPrime(int num)
+{
+	for(int i=2;i<num;i++)
+	{
+		if(num%i==0)
+		{
+			return 0;
+		}
+		
+	}
+	return num;
+}
+}
